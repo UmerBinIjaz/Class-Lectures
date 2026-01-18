@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Volume of Cube and Cylinder</title>
+</head>
+<body>
+
+<h2>Calculate Volume of Cube & Cylinder</h2>
+
+<script>
+    var side = prompt("Enter side of cube:");
+    var radius = prompt("Enter radius of cylinder:");
+    var height = prompt("Enter height of cylinder:");
+
+    side = Number(side);
+    radius = Number(radius);
+    height = Number(height);
+
+    var cubeVolume = side * side * side;
+    var cylinderVolume = 3.14 * radius * radius * height;
+
+    document.write("Volume of Cube: " + cubeVolume + "<br>");
+    document.write("Volume of Cylinder: " + cylinderVolume);
+</script>
+
+</body>
+</html>

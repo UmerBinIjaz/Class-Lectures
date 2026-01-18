@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Series</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+        .box {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Print Number Series</h2>
+
+<div class="box">
+    Enter Number:
+    <input type="number" id="num">
+    <br><br>
+    <button onclick="printSeries()">Print</button>
+
+    <p id="output"></p>
+</div>
+
+<script>
+function printSeries() {
+    let n = Number(document.getElementById("num").value);
+    let result = "";
+
+    for (let i = 1; i <= n; i++) {
+        result += i + " ";
+    }
+
+    document.getElementById("output").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
